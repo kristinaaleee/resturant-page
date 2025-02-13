@@ -1,12 +1,25 @@
-import "./style.css";
+// import "./style.css";
 import { Home } from "./home.js";
 import { About } from "./about.js";
+import { Menu } from "./menu.js"
 
-console.log(Home) //space holder. implement on open 
-//and on home button press
-console.log(About)
-alert('yo is this working'); 
 
-// tab switching logic
-// event listener for buttons; wipe current content; 
-// run correct tab module for new content
+let content = document.getElementById('content');
+content = Home();
+const button = document.querySelectorAll("button");
+button.forEach(function(item) {
+    item.addEventListener('click', function() {
+        if (item.id = "About"){
+            content = About(); 
+        }
+        if (item.id = "Menu"){
+            content = Menu();
+        }
+        if (item.id = "Home"){
+            content = Home();
+        }
+    })
+})
+
+
+

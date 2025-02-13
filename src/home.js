@@ -1,7 +1,9 @@
 export {Home};
 
 function Home() {
-    const container = document.getElementById('content');
+    // const container = document.createElement('div');
+    // container.setAttribute('id', 'container');
+    const container = document.getElementById('content')
     const heroWrapper = document.createElement('div');
     heroWrapper.classList.add('hero-wrapper');
     const featureWrapper = document.createElement('div');
