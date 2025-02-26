@@ -1,9 +1,9 @@
 export { About };
 
 function About() {
-    // const container = document.createElement('div');
-    // container.setAttribute('id', 'container');
-    const container = document.getElementById('content');
+    const container = document.createElement('div');
+    container.setAttribute('id', 'container');
+    // const container = document.getElementById('content');
     const titleText = document.createElement('h1');
     titleText.textContent = 'About Us' 
 
@@ -20,5 +20,7 @@ function About() {
     container.appendChild(titleText);
     container.appendChild(bodyWrapper);
     container.appendChild(aboutCloser);
+
+    return container;
 
 }

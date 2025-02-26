@@ -1,0 +1,172 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+} 
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+p {
+    text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+#root, #__next {
+    isolation: isolate;
+}
+/* preset */
+
+:root{
+    --beige: #D9CFC1;
+    --blue: #477998;
+}
+body{
+    background-color: var(--beige);
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+
+} 
+#name:before{
+    content:'\ea13';
+    font-family:'cappuccicons';
+    margin-right: 15px ;
+} 
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 30px;
+    
+}
+#name{
+    font-size: 30px
+}
+nav > button{
+    border: none;
+    background-color: transparent;
+    margin: .5rem;
+    font-size: 20px;
+}
+nav > button:hover{
+    text-decoration: underline;
+}
+
+/* home */
+/* hero */
+.hero-wrapper{
+    display: flex;
+    justify-content: center;
+    background-color: var(--blue);
+    white-space: pre;
+    height: 715px;
+    overflow: hidden;
+}
+.hero-wrapper > div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+
+    /* width: 50%; */
+    padding: 0% 0% 0% 10%;
+}
+.hero-wrapper > img{
+    /* width: 100%; */
+    
+    margin: -150px 0px;
+}
+.hero-wrapper > div > h1 {
+    color: var(--beige);
+    font-size: 40px;
+    line-height: 1.2em;
+    text-transform: uppercase;
+}
+.hero-wrapper > div > p {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 1.2rem;
+}
+#view-menu{
+    width: fit-content;
+    border-radius: 25px ;
+    border: 2px solid var(--beige);
+    background-color: var(--beige);
+    padding: .5rem 2.2rem;
+
+    font-size: 18px;
+}
+#view-menu:hover{
+    border: 2px solid var(--beige);
+    background-color: var(--blue);
+    color: white
+}
+
+/* feature */
+.feature-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    padding: 100px
+}
+.feature-wrapper > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+}
+.feature-wrapper > div > div {
+    height: 350px;
+    overflow: hidden;
+}
+.feature-wrapper > div > p {
+    padding: 1.5rem;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1em;
+    text-wrap: wrap;
+    text-align: center;
+
+}
+#feature-one{
+    margin: -75px 1px;
+}
+#feature-two{
+    margin: -150px 0px;
+}
+#feature-three{
+    margin: -100px 0px;
+}
+
+.info-wrapper, .info-wrapper > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--blue);;
+}
+.info-wrapper{
+    gap: 1.5rem ;
+}
+h2{
+    color: var(--beige);
+}
+h2 + p{
+    color: white;
+    white-space: pre;     
+    text-align: center;
+    /* preline possibly */
+}
