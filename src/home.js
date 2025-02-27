@@ -22,7 +22,7 @@ function Home() {
     const heroTitle = document.createElement('h1');
     heroTitle.textContent = 'For the Coffee & \r\nBook Lovers';
     const heroText = document.createElement('p');
-    heroText.textContent = 'Welcome to The Cozy Brew, where great coffee meets a \r\npeaceful reading escape. Come in, take a seat, and let the \r\naroma of our coffee and the comfort of our books \r\nsurround you.';
+    heroText.textContent = 'Welcome to The Cozy Brew, where great coffee meets a peaceful reading escape. Come in, take a seat, and let the aroma of our coffee and the comfort of our books surround you.';
     const heroAction = document.createElement('button');
     heroAction.setAttribute('id', 'view-menu')
     heroAction.textContent = 'View Menu'
