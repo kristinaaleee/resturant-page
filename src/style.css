@@ -33,12 +33,16 @@ h1, h2, h3, h4, h5, h6 {
     --beige: #D9CFC1;
     --blue: #477998;
 }
+html, body, #content{
+    height: 100%;
+}
 body{
     background-color: var(--beige);
     font-family: "Outfit", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
 
+    min-width: 1350px
 } 
 #name::before{
     content:'\ea13';
@@ -81,8 +85,7 @@ nav > button:hover{
     gap: 10px;
     justify-content: center;
 
-    /* adjust for larger screen idk */
-    max-width: 50%;
+    max-width: 47%;
     padding: 0% 5% 0% 5%;
 }
 .hero-wrapper > img{
@@ -93,6 +96,7 @@ nav > button:hover{
     font-size: 40px;
     line-height: 1.2em;
     text-transform: uppercase;
+    white-space: pre;
 }
 .hero-wrapper > div > p {
     color: white;
@@ -121,7 +125,7 @@ nav > button:hover{
     justify-content: center;
     gap: 80px;
     padding: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 }
 .feature-wrapper > div{
     display: flex;
@@ -162,38 +166,44 @@ nav > button:hover{
 .info-wrapper{
     border-top-left-radius: 200% ;
     border-top-right-radius: 200%;
-    padding: 50px 0px;
-    gap: 1.3rem;
+    padding: 75px 0px;
+    gap: 1.5rem;
 }
-h2{
+.info-wrapper > div > h2{
     color: var(--beige);
+    text-transform: uppercase;
+    font-size: 30px;
 }
 h2 + p{
     color: white;
-    white-space: pre;     
     text-align: center;
-    /* preline possibly */
+    white-space: pre;
+    font-size: 20px;
 }
 
-/* menu styling */
+/* menu */
 #menu-container{
+    display: flex;
+    justify-content: center;
     background-color: var(--blue);
     padding: 5% 10%;
 }
 
-/* about styling */
+/* about */
 #about-container{
     background-color: var(--blue);
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100%;
     gap: 20px;
-    padding: 50px 150px;
+    padding: 90px 150px;
 }
 #about-container > h1{
     color: var(--beige);
-    font-size: 40px;
+    font-size: 50px;
     text-transform: uppercase;
+    margin-bottom: 40px;;
 }
 #about-container > div{
     display: flex;
@@ -203,6 +213,7 @@ h2 + p{
 }
 #about-container > div > p{
     white-space: pre-line;
+    font-size: 22px;
     text-wrap: wrap;
     max-width: 60%;
     color: white;
@@ -211,13 +222,16 @@ h2 + p{
     width: 400px;
     height: 400px;
     overflow: hidden;
-    border-radius: 50%
+    border-radius: 50%;
+    min-width: 400px;
 }
 #about-image > img{
     margin-top: -50px;
 }
 #about-container > h2{
-    margin: 100px 0px;
+    font-size: 32px;
+    margin: 150px 50px;
     text-align: center;
     text-wrap: wrap;
+    color: var(--beige);
 }
